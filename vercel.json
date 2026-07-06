@@ -1,1 +1,25 @@
-{"cleanUrls":true,"trailingSlash":false,"headers":[{"source":"/(.*)", "headers":[{"key":"Cache-Control","value":"public, max-age=3600, stale-while-revalidate=86400"}]}]}
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, stale-while-revalidate=86400"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/blog",
+      "destination": "https://www.founditos.com/hosted-blog/d9ee7031-5724-4ad6-9b96-8b98cb45511a"
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "https://www.founditos.com/hosted-blog/d9ee7031-5724-4ad6-9b96-8b98cb45511a/:path*"
+    }
+  ]
+}
