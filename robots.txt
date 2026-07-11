@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+Disallow: /wp-json/
+Disallow: /xmlrpc.php
+
+Sitemap: https://www.allprosflawless.com/sitemap.xml
